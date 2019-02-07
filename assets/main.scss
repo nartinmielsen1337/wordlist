@@ -1,28 +1,38 @@
 ---
 ---
+$general_font_size: 10px;
+$gutter: 10px;
+$vertical_spacing: $gutter*2;
+$primary_font_family: 'Fira Sans', sans-serif;
+
+$color--black: #000000;
+$color--white: #FFFFFF;
 
 html, body {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: $primary_font_family;
     margin:0;
     padding: 0;
-    font-size: 19px;
-    background-color: red !important;
+    font-size: $general_font_size*2;
+}
+
+a {
+  color: $color--black;
 }
 h1{
-    font-size: 48px;
+    font-size: $general_font_size:*4.8;
     word-break: break-all;
 }
 h2{
-    font-size: 36px;
+    font-size: $general_font_size:*3.6;
 }
 h3{
-    font-size: 28px;
+    font-size: $general_font_size*2.8;
 }
 .bread p{
-    font-size: 21px;
+    font-size: $general_font_size:*2;
 }
-p{
-    line-height: 1.6;
+p {
+    line-height: $general_font_size:*1.6;
 }
 
 a.anchor{
@@ -35,9 +45,9 @@ ul.register {
     text-align: center;
     margin:36px 0 0 0;
 }
-hr{
+hr {
     border:0;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid $color--black;
 }
 
 .breadcrumb {
