@@ -21,12 +21,12 @@ layout: default
 
     	{% for foo_pages in site.ord | where:"permalink",related.slug %}
     		{% if related.slug == foo_pages.permalink %}
-    			
+
 			<div class="related">
 				<H2>{{ foo_pages.title }}</H2>
 				<hr />
 				<p>{{ foo_pages.metadescription }}</p>
-				<a href="{{ foo_pages.permalink  }}">{{ foo_pages.title }}</a>
+				<a href="{{ site.baseurl }}{{ foo_pages.permalink  }}">{{ foo_pages.title }}</a>
 			</div>
 
 			{% endif %}
