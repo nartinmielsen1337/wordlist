@@ -1,0 +1,25 @@
+---
+layout: default
+title: Ordlista 19 - Keywords
+
+---
+<script type="text/javascript">
+	var posts = [
+	  {% for ord in site.ord %}
+	    {
+	      "title": "{{ ord.title }}",
+	      "tags": "{{ ord.metatags }}",
+	      "url": "{{ ord.permalink }}"
+	    }
+	    {% unless forloop.last %},{% endunless %}
+	  {% endfor %}
+	];
+
+	KeyWordifylist(posts);
+</script>
+
+<nav class="breadcrumb">
+	<a href="/">Start</a> / <span>{{ page.title }}</span>
+</nav>
+
+<div id="keywordlist"></div>
