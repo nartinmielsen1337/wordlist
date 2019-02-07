@@ -34,6 +34,10 @@ p {
     line-height: $general_font_size * 2;
 }
 
+a {
+  color: $color--black;
+}
+
 a.anchor{
     margin-top: 36px;
     display: block;
