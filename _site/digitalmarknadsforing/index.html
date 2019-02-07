@@ -1,0 +1,216 @@
+<html>
+
+<head>
+    <title>Digital Marknadsföring</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta name="description" content="Sed sed iaculis libero. Sed id rhoncus orci. Quisque fringilla, metus eu congue consequat, lectus ligula faucibus justo, nec cursus enim ex sed ligula.">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/wordlist/assets/main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+
+    <script type="text/javascript">
+
+
+            function KeyWordifylist(posts)
+            {
+                const urlParams = new URLSearchParams(window.location.search);
+                const myParam = urlParams.get('keyword');
+
+                console.log(getAllIndexes(posts, myParam));
+
+                var results = getAllIndexes(posts, myParam);
+
+                for(i = 0; i < results.length; i++){
+                    $("#keywordlist").append('<h2>' + results[i].title + '</h2><a href="/wordlist/' + results[i].url + '">Läs mer</a>');
+                }
+
+            }
+
+            function getAllIndexes(arr, val) {
+
+                var indexes = [], i;
+                for(i = 0; i < arr.length; i++){
+
+                    var obj = JSON.parse(arr[i])
+
+                    if (obj.tags.includes(val)){
+
+                        indexes.push(obj);
+                    }
+                }
+                return indexes;
+            }
+    </script>
+
+</head>
+
+	<body>
+
+	<div class="wrapper">
+	<nav class="breadcrumb">
+	<a href="/wordlist">Start</a> / <span>Digital Marknadsföring</span>
+</nav>
+
+<h1 class="u-text--large">Digital Marknadsföring</h1>
+
+<div class="bread">
+
+
+
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim pulvinar diam. Integer aliquam, nibh nec auctor bibendum, magna lacus molestie lectus, et luctus nisl justo nec elit. Praesent fringilla dolor in congue auctor. Quisque eleifend ipsum a fringilla gravida. Maecenas nisi neque, ultrices porttitor auctor eget, fermentum eget urna.</p>
+
+<p>Nulla id lectus vitae nunc vestibulum ornare vitae in magna. Integer sagittis pellentesque velit in scelerisque. Aenean nec lacinia justo, vel euismod purus. Nunc condimentum a erat vitae tristique. Nulla id suscipit tellus, ut interdum magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tristique tellus eget luctus maximus. Sed sed iaculis libero. Sed id rhoncus orci. Quisque fringilla, metus eu congue consequat, lectus ligula faucibus justo, nec cursus enim ex sed ligula.</p>
+
+
+
+</div>
+
+
+    
+
+    	
+    		
+    	
+    		
+
+			<div class="related">
+				<H2>Content Marketing</H2>
+				<hr />
+				<p>Oget luctus maximus. Sed sed iaculis libero. Sed id rhoncus orci. Quisque fringilla, metus eu congue consequat, lectus ligula faucibus justo, nec cursus enim ex sed ligula.</p>
+				<a href="/wordlist/contentmarketing/">Content Marketing</a>
+			</div>
+
+			
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+
+    
+
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+
+			<div class="related">
+				<H2>Programatic</H2>
+				<hr />
+				<p>Duis tristique tellus eget luctus maximus. Sed sed iaculis libero. Sed id rhoncus orci. Quisque fringilla, metus eu congue consequat, lectus ligula faucibus justo, nec cursus enim ex sed ligula.</p>
+				<a href="/wordlist/programatic/">Programatic</a>
+			</div>
+
+			
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+
+    
+
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+
+			<div class="related">
+				<H2>Seo</H2>
+				<hr />
+				<p>Duis tristique tellus eget luctus maximus. Sed sed iaculis libero. Sed id rhoncus orci. Quisque fringilla, metus eu congue consequat, lectus ligula faucibus justo, nec cursus enim ex sed ligula, lectus ligula faucibus justo, nec cursus enim ex sed ligula.</p>
+				<a href="/wordlist/seo/">Seo</a>
+			</div>
+
+			
+    	
+    		
+    	
+    		
+    	
+
+    
+
+    	
+    		
+
+			<div class="related">
+				<H2>CMS</H2>
+				<hr />
+				<p>CMS står för Content Managment System. CMS:et är det verktyg som används för att administrera innehållet på exempelvis en hemsida, intranät eller en app.</p>
+				<a href="/wordlist/cms/">CMS</a>
+			</div>
+
+			
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+
+    
+
+
+	</div>
+
+
+	</body>
+</html>

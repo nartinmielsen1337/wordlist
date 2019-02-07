@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <title>Content Marketing</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta name="description" content="Oget luctus maximus. Sed sed iaculis libero. Sed id rhoncus orci. Quisque fringilla, metus eu congue consequat, lectus ligula faucibus justo, nec cursus enim ex sed ligula.">
+    <meta name="keywords" content="cms, digitalmarketing, digitalmarknadsföring, content">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/wordlist/assets/main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+
+    <script type="text/javascript">
+
+
+            function KeyWordifylist(posts)
+            {
+                const urlParams = new URLSearchParams(window.location.search);
+                const myParam = urlParams.get('keyword');
+
+                console.log(getAllIndexes(posts, myParam));
+
+                var results = getAllIndexes(posts, myParam);
+
+                for(i = 0; i < results.length; i++){
+                    $("#keywordlist").append('<h2>' + results[i].title + '</h2><a href="/wordlist/' + results[i].url + '">Läs mer</a>');
+                }
+
+            }
+
+            function getAllIndexes(arr, val) {
+
+                var indexes = [], i;
+                for(i = 0; i < arr.length; i++){
+
+                    var obj = JSON.parse(arr[i])
+
+                    if (obj.tags.includes(val)){
+
+                        indexes.push(obj);
+                    }
+                }
+                return indexes;
+            }
+    </script>
+
+</head>
+
+	<body>
+
+	<div class="wrapper">
+	<nav class="breadcrumb">
+	<a href="/wordlist">Start</a> / <span>Content Marketing</span>
+</nav>
+
+<h1 class="u-text--large">Content Marketing</h1>
+
+<div class="bread">
+
+
+
+
+	<span><a href="/wordlist/keywords/?keyword=cms">#cms</a></span>
+
+	<span><a href="/wordlist/keywords/?keyword=digitalmarketing">#digitalmarketing</a></span>
+
+	<span><a href="/wordlist/keywords/?keyword=digitalmarknadsföring">#digitalmarknadsföring</a></span>
+
+	<span><a href="/wordlist/keywords/?keyword=content">#content</a></span>
+
+
+<p>CM betyder innehåll</p>
+
+
+</div>
+
+
+    
+
+    	
+    		
+
+			<div class="related">
+				<H2>CMS</H2>
+				<hr />
+				<p>CMS står för Content Managment System. CMS:et är det verktyg som används för att administrera innehållet på exempelvis en hemsida, intranät eller en app.</p>
+				<a href="/wordlist/cms/">CMS</a>
+			</div>
+
+			
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+    		
+    	
+
+    
+
+
+	</div>
+
+
+	</body>
+</html>
