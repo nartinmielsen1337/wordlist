@@ -11,9 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 
     <script type="text/javascript">
-            $(function() {
-                console.log( "ready!" );
-            });
+
 
             function KeyWordifylist(posts)
             {
@@ -21,17 +19,29 @@
                 const myParam = urlParams.get('keyword');
 
                 console.log(getAllIndexes(posts, myParam));
+
+                var results = getAllIndexes(posts, myParam);
+
+                for(i = 0; i < results.length; i++){
+                    $("#keywordlist").append('<h2>' + results[i].title + '</h2><a href="{{site.baseurl}}/' + results[i].url + '">Läs mer</a>');
+                }
+                
             }
 
             function getAllIndexes(arr, val) {
 
                 var indexes = [], i;
-                for(i = 0; i < arr.length; i++)
+                for(i = 0; i < arr.length; i++){
+
                     var obj = JSON.parse(arr[i])
-                    
-                    if (obj.tags.includes(val))
+                    if (obj.tags.includes(val)){
                         
-                        indexes.push(i);
+                        indexes.push(obj);
+                    }
+                }
+                    
+
+                return indexes;
 
 
 
