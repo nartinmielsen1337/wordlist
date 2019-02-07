@@ -10,7 +10,7 @@ layout: default
 {% assign metatags = page.metatags | split: ", " %}
 
 {% for tag in metatags %}
-	<span><a href="/keyword/{{ tag }}/">#{{ tag }}</a></span>
+	<span><a href="/keywords/?keyword={{ tag }}/">#{{ tag }}</a></span>
 {% endfor %}
 
 {{ page.content }}
