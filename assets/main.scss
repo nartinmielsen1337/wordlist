@@ -13,7 +13,7 @@ html, body {
     font-family: $primary_font_family;
     margin:0;
     padding: 0;
-    font-size: $general_font_size * 2;
+    font-size: $general_font_size * 1.6;
 }
 
 
@@ -35,10 +35,11 @@ p {
 }
 
 a {
-  background-color: $color--black;
-  color: $color--white;
-  padding: $gutter / 2;
+  color: $color--black;
 }
+
+
+
 
 a.anchor{
     margin-top: 36px;

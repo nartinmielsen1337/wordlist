@@ -9,6 +9,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+    <link rel="stylesheet" href="/wordlist/assets/main.css">
+
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 
@@ -27,7 +29,7 @@
                 for(i = 0; i < results.length; i++){
                     $("#keywordlist").append('<h2>' + results[i].title + '</h2><a href="/wordlist/' + results[i].url + '">Läs mer</a>');
                 }
-                
+
             }
 
             function getAllIndexes(arr, val) {
@@ -36,109 +38,27 @@
                 for(i = 0; i < arr.length; i++){
 
                     var obj = JSON.parse(arr[i])
+
                     if (obj.tags.includes(val)){
-                        
+
                         indexes.push(obj);
                     }
                 }
-                    
-
                 return indexes;
-
-
-
             }
     </script>
-    <style type="text/css">
-        html, body {
-            font-family: 'Fira Sans', sans-serif;
-            margin:0;
-            padding: 0;
-            font-size: 19px;
-        }
-        h1{
-            font-size: 48px;
-            word-break: break-all;
-        }
-        h2{
-            font-size: 36px;
-        }
-        h3{
-            font-size: 28px;
-        }
-        .bread p{
-            font-size: 21px;
-        }
-        p{
-            line-height: 1.6;
-        }
 
-        a.anchor{
-            margin-top: 36px;
-            display: block;
-        }
-        ul.register {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-            margin:36px 0 0 0;
-        }
-        hr{
-            border:0;
-            border-bottom: 1px solid #000;
-        }
-
-        .breadcrumb {
-            margin:36px 0 0 0;
-        }
-
-        .wrapper {
-            max-width: 760px;
-            position: absolute;
-            padding: 0 20px
-        }
-
-        .related{
-            width: 370px;
-            margin-top: 72px;
-            float: left;
-        }
-        .related:nth-child(odd) {
-            margin-left:20px;
-        }
-
-        @media screen and (max-width: 760px) {
-            .related{
-                width: auto;
-                height: auto;
-                float: none;
-            }
-            .related:nth-child(odd) {
-                margin-left:0;
-            }
-
-            h1{
-            font-size: 32px;
-            word-break: break-all;
-            }
-            h2{
-                font-size: 26px;
-            }
-            h3{
-                font-size: 22px;
-            }
-        }
-
-    </style>
 </head>
 
 	<body>
 
 	<div class="wrapper">
 	<nav class="breadcrumb">
-	<a href="/">Start</a> / <span>CRO</span>
+	<a href="/wordlist">Start</a> / <span>CRO</span>
 </nav>
+
 <h1>CRO</h1>
+
 <div class="bread">
 
 
@@ -149,6 +69,7 @@
 
 
 </div>
+
 
     
 
@@ -164,12 +85,12 @@
     		
     	
     		
-    			
+
 			<div class="related">
 				<H2>Konvertering</H2>
 				<hr />
 				<p>Description</p>
-				<a href="/konvertering/">Konvertering</a>
+				<a href="/wordlist/konvertering/">Konvertering</a>
 			</div>
 
 			
@@ -184,6 +105,7 @@
     	
 
     
+
 
 	</div>
 
