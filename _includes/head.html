@@ -7,6 +7,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+  <link href="{{ site.baseurl }}/sass/main.scss" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 
@@ -28,9 +30,9 @@
                 var indexes = [], i;
                 for(i = 0; i < arr.length; i++)
                     var obj = JSON.parse(arr[i])
-                    
+
                     if (obj.tags.includes(val))
-                        
+
                         indexes.push(i);
 
 
