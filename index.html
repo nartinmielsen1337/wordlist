@@ -4,23 +4,25 @@ title: Ordlista 19
 
 ---
 
-<div style="width: 90%;">
- 
+<div style="
+  width: 100%;
+">
+
  {% assign letter = "A" %}
  {% for ord in site.ord %}
  	{% assign foo = ord.title | slice: 0 %}
 
  	{% unless letter contains foo %}
 
-		<a class="anchor" name="{{ ord.title | slice: 0 }}">{{ ord.title | slice: 0 }}</a> 
- 		<hr/>	
+		<a class="anchor" name="{{ ord.title | slice: 0 }}">{{ ord.title | slice: 0 }}</a>
+ 		<hr/>
  	{% endunless %}
  	{% assign letter = foo %}
 
  	<div>
-      <h2>{{ ord.title }} </h2>
+      <h2> <a href="{{ site.baseurl }}{{ ord.permalink }}">{{ ord.title }}</a> </h2>
       <p>{{ ord.metadescription }}</p>
-      <a href="{{ ord.permalink }}">Läs mer om {{ ord.title }} </a>
+      <a href="{{ site.baseurl }}{{ ord.permalink }}">Läs mer om: {{ ord.title }} </a>
  	</div>
  {% endfor %}
 </div><div style="width: 10%; position: fixed; right: 0; top:0;">
