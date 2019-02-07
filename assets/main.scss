@@ -13,25 +13,25 @@ html, body {
     font-family: $primary_font_family;
     margin:0;
     padding: 0;
-    font-size: $general_font_size;
+    font-size: $general_font_size * 2;
 }
 
 
 h1{
-    font-size: $general_font_size;
+    font-size: $general_font_size * 4.8;
     word-break: break-all;
 }
 h2{
-    font-size: $general_font_size;
+    font-size: $general_font_size * 3.6;
 }
 h3{
-    font-size: $general_font_size;
+    font-size: $general_font_size * 2.4;
 }
 .bread p{
-    font-size: $general_font_size;
+    font-size: $general_font_size * 2;
 }
 p {
-    line-height: $general_font_size;
+    line-height: $general_font_size * 2;
 }
 
 a.anchor{
