@@ -20,9 +20,9 @@ title: Ordlista 19
  	{% assign letter = foo %}
 
  	<div>
-      <h2>{{ ord.title }} </h2>
+      <h2> <a href="{{ site.baseurl }} {{ ord.permalink }}">{{ ord.title }}</a> </h2>
       <p>{{ ord.metadescription }}</p>
-      <a href="{{ site.baseurl ord.permalink }}">Läs mer om: {{ ord.title }} </a>
+      <a href="{{ site.baseurl }} {{ ord.permalink }}">Läs mer om: {{ ord.title }} </a>
  	</div>
  {% endfor %}
 </div><div style="width: 10%; position: fixed; right: 0; top:0;">
