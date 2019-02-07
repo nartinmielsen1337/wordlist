@@ -36,6 +36,7 @@ collections:
     output: true
 
 sass:
+  sass_dir: _sass
   style: compressed
 
 # Exclude from processing.
