@@ -1,5 +1,6 @@
 ---
 ---
+
 $general_font_size: 10px;
 $gutter: 10px;
 $vertical_spacing: $gutter*2;
@@ -18,21 +19,22 @@ html, body {
 a {
   color: $color--black;
 }
+
 h1{
-    font-size: $general_font_size:*4.8;
+    font-size: $general_font_size*4.8;
     word-break: break-all;
 }
 h2{
-    font-size: $general_font_size:*3.6;
+    font-size: $general_font_size*3.6;
 }
 h3{
     font-size: $general_font_size*2.8;
 }
 .bread p{
-    font-size: $general_font_size:*2;
+    font-size: $general_font_size*2;
 }
 p {
-    line-height: $general_font_size:*1.6;
+    line-height: $general_font_size*1.6;
 }
 
 a.anchor{
