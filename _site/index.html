@@ -1,36 +1,49 @@
 <html>
+
 <head>
     <title>Ordlista 19</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="">
+	  <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+
     <script type="text/javascript">
-            $(function() {
-                console.log( "ready!" );
-            });
-            
+
+
             function KeyWordifylist(posts)
             {
                 const urlParams = new URLSearchParams(window.location.search);
                 const myParam = urlParams.get('keyword');
 
                 console.log(getAllIndexes(posts, myParam));
+
+                var results = getAllIndexes(posts, myParam);
+
+                for(i = 0; i < results.length; i++){
+                    $("#keywordlist").append('<h2>' + results[i].title + '</h2><a href="/wordlist/' + results[i].url + '">Läs mer</a>');
+                }
+                
             }
 
             function getAllIndexes(arr, val) {
 
                 var indexes = [], i;
-                for(i = 0; i < arr.length; i++)
+                for(i = 0; i < arr.length; i++){
+
                     var obj = JSON.parse(arr[i])
-                    
-                    if (obj.tags.includes(val))
+                    if (obj.tags.includes(val)){
                         
-                        indexes.push(i);
+                        indexes.push(obj);
+                    }
+                }
+                    
+
+                return indexes;
 
 
 
@@ -39,19 +52,19 @@
     <style type="text/css">
         html, body {
             font-family: 'Fira Sans', sans-serif;
-            margin:0; 
+            margin:0;
             padding: 0;
             font-size: 19px;
         }
         h1{
             font-size: 48px;
-            word-break: break-all;   
+            word-break: break-all;
         }
         h2{
-            font-size: 36px;   
+            font-size: 36px;
         }
         h3{
-            font-size: 28px;   
+            font-size: 28px;
         }
         .bread p{
             font-size: 21px;
@@ -106,13 +119,13 @@
 
             h1{
             font-size: 32px;
-            word-break: break-all;   
+            word-break: break-all;
             }
             h2{
-                font-size: 26px;   
+                font-size: 26px;
             }
             h3{
-                font-size: 22px;   
+                font-size: 22px;
             }
         }
 
@@ -120,25 +133,27 @@
 </head>
 
 	<body>
-	
+
 	<div class="wrapper">
-	<div style="width: 90%;">
- 
+	<div style="
+  width: 100%;
+">
+
  
  
  	
 
  	
 
-		<a class="anchor" name="C">C</a> 
- 		<hr/>	
+		<a class="anchor" name="C">C</a>
+ 		<hr/>
  	
  	
 
  	<div>
-      <h2>CMS </h2>
+      <h2> <a href="/wordlist/cms/">CMS</a> </h2>
       <p>CMS står för Content Managment System. CMS:et är det verktyg som används för att administrera innehållet på exempelvis en hemsida, intranät eller en app.</p>
-      <a href="/cms/">Läs mer om CMS </a>
+      <a href="/wordlist/cms/">Läs mer om: CMS </a>
  	</div>
  
  	
@@ -147,9 +162,9 @@
  	
 
  	<div>
-      <h2>Content Marketing </h2>
+      <h2> <a href="/wordlist/contentmarketing/">Content Marketing</a> </h2>
       <p>Oget luctus maximus. Sed sed iaculis libero. Sed id rhoncus orci. Quisque fringilla, metus eu congue consequat, lectus ligula faucibus justo, nec cursus enim ex sed ligula.</p>
-      <a href="/contentmarketing/">Läs mer om Content Marketing </a>
+      <a href="/wordlist/contentmarketing/">Läs mer om: Content Marketing </a>
  	</div>
  
  	
@@ -158,99 +173,99 @@
  	
 
  	<div>
-      <h2>CRO </h2>
+      <h2> <a href="/wordlist/cro/">CRO</a> </h2>
       <p>Description</p>
-      <a href="/cro/">Läs mer om CRO </a>
+      <a href="/wordlist/cro/">Läs mer om: CRO </a>
  	</div>
  
  	
 
  	
 
-		<a class="anchor" name="D">D</a> 
- 		<hr/>	
+		<a class="anchor" name="D">D</a>
+ 		<hr/>
  	
  	
 
  	<div>
-      <h2>Digital Marknadsföring </h2>
+      <h2> <a href="/wordlist/digitalmarknadsforing/">Digital Marknadsföring</a> </h2>
       <p>Sed sed iaculis libero. Sed id rhoncus orci. Quisque fringilla, metus eu congue consequat, lectus ligula faucibus justo, nec cursus enim ex sed ligula.</p>
-      <a href="/digitalmarknadsforing/">Läs mer om Digital Marknadsföring </a>
+      <a href="/wordlist/digitalmarknadsforing/">Läs mer om: Digital Marknadsföring </a>
  	</div>
  
  	
 
  	
 
-		<a class="anchor" name="H">H</a> 
- 		<hr/>	
+		<a class="anchor" name="H">H</a>
+ 		<hr/>
  	
  	
 
  	<div>
-      <h2>HCI </h2>
+      <h2> <a href="/wordlist/hci/">HCI</a> </h2>
       <p>Description</p>
-      <a href="/hci/">Läs mer om HCI </a>
+      <a href="/wordlist/hci/">Läs mer om: HCI </a>
  	</div>
  
  	
 
  	
 
-		<a class="anchor" name="K">K</a> 
- 		<hr/>	
+		<a class="anchor" name="K">K</a>
+ 		<hr/>
  	
  	
 
  	<div>
-      <h2>Konvertering </h2>
+      <h2> <a href="/wordlist/konvertering/">Konvertering</a> </h2>
       <p>Description</p>
-      <a href="/konvertering/">Läs mer om Konvertering </a>
+      <a href="/wordlist/konvertering/">Läs mer om: Konvertering </a>
  	</div>
  
  	
 
  	
 
-		<a class="anchor" name="P">P</a> 
- 		<hr/>	
+		<a class="anchor" name="P">P</a>
+ 		<hr/>
  	
  	
 
  	<div>
-      <h2>Programatic </h2>
+      <h2> <a href="/wordlist/programatic/">Programatic</a> </h2>
       <p>Duis tristique tellus eget luctus maximus. Sed sed iaculis libero. Sed id rhoncus orci. Quisque fringilla, metus eu congue consequat, lectus ligula faucibus justo, nec cursus enim ex sed ligula.</p>
-      <a href="/programatic/">Läs mer om Programatic </a>
+      <a href="/wordlist/programatic/">Läs mer om: Programatic </a>
  	</div>
  
  	
 
  	
 
-		<a class="anchor" name="S">S</a> 
- 		<hr/>	
+		<a class="anchor" name="S">S</a>
+ 		<hr/>
  	
  	
 
  	<div>
-      <h2>Seo </h2>
+      <h2> <a href="/wordlist/seo/">Seo</a> </h2>
       <p>Duis tristique tellus eget luctus maximus. Sed sed iaculis libero. Sed id rhoncus orci. Quisque fringilla, metus eu congue consequat, lectus ligula faucibus justo, nec cursus enim ex sed ligula, lectus ligula faucibus justo, nec cursus enim ex sed ligula.</p>
-      <a href="/seo/">Läs mer om Seo </a>
+      <a href="/wordlist/seo/">Läs mer om: Seo </a>
  	</div>
  
  	
 
  	
 
-		<a class="anchor" name="U">U</a> 
- 		<hr/>	
+		<a class="anchor" name="U">U</a>
+ 		<hr/>
  	
  	
 
  	<div>
-      <h2>UI </h2>
+      <h2> <a href="/wordlist/ui/">UI</a> </h2>
       <p>Description</p>
-      <a href="/ui/">Läs mer om UI </a>
+      <a href="/wordlist/ui/">Läs mer om: UI </a>
  	</div>
  
  	
@@ -259,9 +274,9 @@
  	
 
  	<div>
-      <h2>UX </h2>
+      <h2> <a href="/wordlist/ux/">UX</a> </h2>
       <p>Description</p>
-      <a href="/ux/">Läs mer om UX </a>
+      <a href="/wordlist/ux/">Läs mer om: UX </a>
  	</div>
  
 </div><div style="width: 10%; position: fixed; right: 0; top:0;">
@@ -346,8 +361,9 @@
 
 	</ul>
 </div>
+
 	</div>
-	
+
 
 	</body>
 </html>
