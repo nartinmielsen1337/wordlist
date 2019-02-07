@@ -31,11 +31,13 @@ h3{
     font-size: $general_font_size * 2;
 }
 p {
-    line-height: $general_font_size * 2;
+    line-height: $general_font_size * 2.5;
 }
 
 a {
-  color: $color--black;
+  background-color: $color--black;
+  color: $color--white;
+  padding: $gutter / 2;
 }
 
 a.anchor{
