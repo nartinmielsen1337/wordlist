@@ -6,11 +6,7 @@ title: Ordlista 19 - Keywords
 <script type="text/javascript">
 	var posts = [
 	  {% for ord in site.ord %}
-	    {
-	      "title": "{{ ord.title }}",
-	      "tags": "{{ ord.metatags }}",
-	      "url": "{{ ord.permalink }}"
-	    }
+	    '{ "title":"{{ ord.title }}","tags": "{{ ord.metatags }}","url":"{{ ord.permalink }}" }'
 	    {% unless forloop.last %},{% endunless %}
 	  {% endfor %}
 	];

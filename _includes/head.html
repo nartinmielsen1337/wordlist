@@ -13,11 +13,26 @@
                 console.log( "ready!" );
             });
             
-
-
             function KeyWordifylist(posts)
             {
-                console.log(posts);
+                const urlParams = new URLSearchParams(window.location.search);
+                const myParam = urlParams.get('keyword');
+
+                console.log(getAllIndexes(posts, myParam));
+            }
+
+            function getAllIndexes(arr, val) {
+
+                var indexes = [], i;
+                for(i = 0; i < arr.length; i++)
+                    var obj = JSON.parse(arr[i])
+                    
+                    if (obj.tags.includes(val))
+                        
+                        indexes.push(i);
+
+
+
             }
     </script>
     <style type="text/css">

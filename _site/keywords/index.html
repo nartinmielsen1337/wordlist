@@ -14,11 +14,26 @@
                 console.log( "ready!" );
             });
             
-
-
             function KeyWordifylist(posts)
             {
-                console.log(posts);
+                const urlParams = new URLSearchParams(window.location.search);
+                const myParam = urlParams.get('keyword');
+
+                console.log(getAllIndexes(posts, myParam));
+            }
+
+            function getAllIndexes(arr, val) {
+
+                var indexes = [], i;
+                for(i = 0; i < arr.length; i++)
+                    var obj = JSON.parse(arr[i])
+                    
+                    if (obj.tags.includes(val))
+                        
+                        indexes.push(i);
+
+
+
             }
     </script>
     <style type="text/css">
@@ -110,74 +125,34 @@
 	<script type="text/javascript">
 	var posts = [
 	  
-	    {
-	      "title": "CMS",
-	      "tags": "cms, contentmanagementsystem, contentmarketing, contentplattform",
-	      "url": "/cms/"
-	    }
+	    '{ "title":"CMS","tags": "cms, contentmanagementsystem, contentmarketing, contentplattform","url":"/cms/" }'
 	    ,
 	  
-	    {
-	      "title": "Content Marketing",
-	      "tags": "",
-	      "url": "/contentmarketing/"
-	    }
+	    '{ "title":"Content Marketing","tags": "","url":"/contentmarketing/" }'
 	    ,
 	  
-	    {
-	      "title": "CRO",
-	      "tags": "",
-	      "url": "/cro/"
-	    }
+	    '{ "title":"CRO","tags": "","url":"/cro/" }'
 	    ,
 	  
-	    {
-	      "title": "Digital Marknadsföring",
-	      "tags": "",
-	      "url": "/digitalmarknadsforing/"
-	    }
+	    '{ "title":"Digital Marknadsföring","tags": "","url":"/digitalmarknadsforing/" }'
 	    ,
 	  
-	    {
-	      "title": "HCI",
-	      "tags": "",
-	      "url": "/hci/"
-	    }
+	    '{ "title":"HCI","tags": "","url":"/hci/" }'
 	    ,
 	  
-	    {
-	      "title": "Konvertering",
-	      "tags": "",
-	      "url": "/konvertering/"
-	    }
+	    '{ "title":"Konvertering","tags": "","url":"/konvertering/" }'
 	    ,
 	  
-	    {
-	      "title": "Programatic",
-	      "tags": "",
-	      "url": "/programatic/"
-	    }
+	    '{ "title":"Programatic","tags": "","url":"/programatic/" }'
 	    ,
 	  
-	    {
-	      "title": "Seo",
-	      "tags": "",
-	      "url": "/seo/"
-	    }
+	    '{ "title":"Seo","tags": "","url":"/seo/" }'
 	    ,
 	  
-	    {
-	      "title": "UI",
-	      "tags": "",
-	      "url": "/ui/"
-	    }
+	    '{ "title":"UI","tags": "","url":"/ui/" }'
 	    ,
 	  
-	    {
-	      "title": "UX",
-	      "tags": "",
-	      "url": "/ux/"
-	    }
+	    '{ "title":"UX","tags": "","url":"/ux/" }'
 	    
 	  
 	];
