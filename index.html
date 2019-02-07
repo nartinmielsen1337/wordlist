@@ -20,12 +20,15 @@ title: Ordlista 19
  	{% assign letter = foo %}
 
  	<div>
-      <h2> <a href="{{ site.baseurl }}{{ ord.permalink }}">{{ ord.title }}</a> </h2>
-      <p>{{ ord.metadescription }}</p>
-      <a href="{{ site.baseurl }}{{ ord.permalink }}">Läs mer om: {{ ord.title }} </a>
+      <h2><a href="{{ site.baseurl }}{{ ord.permalink }}">{{ ord.title }}</a></h2>
+        <p>{{ ord.metadescription }}</p>
+      <a href="{{ site.baseurl }}{{ ord.permalink }}">Läs mer om: {{ ord.title }}</a>
  	</div>
+
  {% endfor %}
+
 </div><div style="width: 10%; position: fixed; right: 0; top:0;">
+
 	<ul class="register">
 
 		{% assign letter = "A" %}
@@ -33,7 +36,7 @@ title: Ordlista 19
 		 	{% assign foo = ord.title | slice: 0 %}
 
 		 	{% unless letter contains foo %}
-						<li><a href="#{{ ord.title | slice: 0 }}">{{ ord.title | slice: 0 }}</a></li>
+				<li><a href="#{{ ord.title | slice: 0 }}">{{ ord.title | slice: 0 }}</a></li>
 		 	{% endunless %}
 		 	{% assign letter = foo %}
 
