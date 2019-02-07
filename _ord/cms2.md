@@ -1,9 +1,9 @@
 ---
 layout: ord
-title: CMS
+title: CMS2
 metadescription: CMS står för Content Managment System. CMS:et är det verktyg som används för att administrera innehållet på exempelvis en hemsida, intranät eller en app.
 metatags: cms, contentmanagementsystem, contentmarketing, contentplattform
-permalink: /cms/
+permalink: /cms2/
 related:
  - slug: /contentmarketing/
 
