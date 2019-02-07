@@ -25,7 +25,7 @@
                 var results = getAllIndexes(posts, myParam);
 
                 for(i = 0; i < results.length; i++){
-                    $("#keywordlist").append('<h2>' + results[i].title + '</h2><a href="/' + results[i].url + '">Läs mer</a>');
+                    $("#keywordlist").append('<h2>' + results[i].title + '</h2><a href="..' + results[i].url + '">Läs mer</a>');
                 }
 
             }
@@ -45,5 +45,16 @@
                 return indexes;
             }
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134130966-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-134130966-1');
+    </script>
+
+
 
 </head>

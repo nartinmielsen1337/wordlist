@@ -9,7 +9,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="/wordlist/assets/main.css">
+    <link rel="stylesheet" href="/assets/main.css">
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
@@ -27,7 +27,7 @@
                 var results = getAllIndexes(posts, myParam);
 
                 for(i = 0; i < results.length; i++){
-                    $("#keywordlist").append('<h2>' + results[i].title + '</h2><a href="/' + results[i].url + '">Läs mer</a>');
+                    $("#keywordlist").append('<h2>' + results[i].title + '</h2><a href="..' + results[i].url + '">Läs mer</a>');
                 }
 
             }
@@ -47,6 +47,17 @@
                 return indexes;
             }
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134130966-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-134130966-1');
+    </script>
+
+
 
 </head>
 
@@ -78,7 +89,7 @@
 <p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
 
 
-  </div><a class="u-url" href="/wordlist/jekyll/update/2019/02/05/welcome-to-jekyll.html" hidden></a>
+  </div><a class="u-url" href="/jekyll/update/2019/02/05/welcome-to-jekyll.html" hidden></a>
 </article>
 
 	</div>

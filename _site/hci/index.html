@@ -4,12 +4,12 @@
     <title>HCI</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	  <meta name="description" content="Description">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="hci, ux, humancomputerinteraction, interactiondesig, ixd, userexperiece">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="/wordlist/assets/main.css">
+    <link rel="stylesheet" href="/assets/main.css">
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
@@ -27,7 +27,7 @@
                 var results = getAllIndexes(posts, myParam);
 
                 for(i = 0; i < results.length; i++){
-                    $("#keywordlist").append('<h2>' + results[i].title + '</h2><a href="/' + results[i].url + '">Läs mer</a>');
+                    $("#keywordlist").append('<h2>' + results[i].title + '</h2><a href="..' + results[i].url + '">Läs mer</a>');
                 }
 
             }
@@ -47,6 +47,17 @@
                 return indexes;
             }
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134130966-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-134130966-1');
+    </script>
+
+
 
 </head>
 
@@ -63,6 +74,18 @@
 
 
 
+
+	<span><a href="/keywords/?keyword=hci">#hci</a></span>
+
+	<span><a href="/keywords/?keyword=ux">#ux</a></span>
+
+	<span><a href="/keywords/?keyword=humancomputerinteraction">#humancomputerinteraction</a></span>
+
+	<span><a href="/keywords/?keyword=interactiondesig">#interactiondesig</a></span>
+
+	<span><a href="/keywords/?keyword=ixd">#ixd</a></span>
+
+	<span><a href="/keywords/?keyword=userexperiece">#userexperiece</a></span>
 
 
 <p>HIC står för Human computer interaction</p>

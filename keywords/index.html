@@ -13,7 +13,11 @@ title: Ordlista 19 - Keywords
 
 
     $(function() {
-          KeyWordifylist(posts);
+		const urlParams = new URLSearchParams(window.location.search);
+		const myParam = urlParams.get('keyword');
+
+      	KeyWordifylist(posts);
+      	$("#title").html("#"+myParam);
     });
 	
 </script>
@@ -21,5 +25,5 @@ title: Ordlista 19 - Keywords
 <nav class="breadcrumb">
 	<a href="/">Hem</a> / <span>{{ page.title }}</span>
 </nav>
-
+<h1 id="title"></h1>
 <div id="keywordlist"></div>
