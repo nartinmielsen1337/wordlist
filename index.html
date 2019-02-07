@@ -8,7 +8,7 @@ title: Ordlista 19
   width: 100%;
 ">
 
- {% assign letter = "A" %}
+ {% assign letter = "" %}
  {% for ord in site.ord %}
  	{% assign foo = ord.title | slice: 0 %}
 
@@ -31,7 +31,7 @@ title: Ordlista 19
 
 	<ul class="register">
 
-		{% assign letter = "A" %}
+		{% assign letter = "" %}
 		 {% for ord in site.ord %}
 		 	{% assign foo = ord.title | slice: 0 %}
 
