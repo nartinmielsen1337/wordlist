@@ -2,6 +2,7 @@
 layout: ord
 title: Digital Marknadsföring
 metadescription: Sed sed iaculis libero. Sed id rhoncus orci. Quisque fringilla, metus eu congue consequat, lectus ligula faucibus justo, nec cursus enim ex sed ligula.
+metatags: digitaltransformation
 permalink: /digitalmarknadsforing/
 related:
  - slug: /contentmarketing/
