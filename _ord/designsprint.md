@@ -1,7 +1,7 @@
 ---
 layout: ord
 title: Design sprint
-metadescription: En design sprint är en 5-dagars process för att lösa problem och testa nya idéer
+metadescription: En design sprint är en 5-dagars process för att lösa problem och testa nya idéer.
 metatags: design, designthinking, mvp, sprint
 permalink: /designsprint/
 related:

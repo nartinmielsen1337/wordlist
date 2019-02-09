@@ -8,6 +8,7 @@ related:
  - slug: /konvertering/
  - slug: /hci/
  - slug: /digitalisering/
+
 externallinks:
  - link: https://medium.com/@jonasmodin/digital-tangibility-matters-d97f8369225e
 ---
