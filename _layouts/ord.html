@@ -22,17 +22,17 @@ layout: default
 {% if page.related %}
     {% for related in page.related %}
 
-    	{% for foo_pages in site.ord | where:"permalink",related.slug %}
-    		{% if related.slug == foo_pages.permalink %}
 
+		{% assign foo_pages = site.pages | where:"permalink",related.slug %}
+
+
+    	{% for page in foo_pages  %}
 			<div class="related">
-				<H2>{{ foo_pages.title }}</H2>
+				<H2>{{ page.title }}</H2>
 				<hr />
-				<p>{{ foo_pages.metadescription }}</p>
-				<a href="{{ foo_pages.permalink  }}">{{ foo_pages.title }}</a>
+				<p>{{ page.metadescription }}</p>
+				<a href="{{ page.permalink  }}">{{ page.title }}</a>
 			</div>
-
-			{% endif %}
     	{% endfor %}
 
     {% endfor %}

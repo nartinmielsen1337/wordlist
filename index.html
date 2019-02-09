@@ -13,7 +13,6 @@ title: Ordlista 19
  	{% assign foo = ord.title | slice: 0 %}
 
  	{% unless letter contains foo %}
-
 		<a class="anchor" name="{{ ord.title | slice: 0 }}">{{ ord.title | slice: 0 }}</a>
  		<hr/>
  	{% endunless %}
