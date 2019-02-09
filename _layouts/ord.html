@@ -17,14 +17,18 @@ layout: default
 
 {{ page.content }}
 
+{% if page.externallinks %}
+	{% for link in page.externallinks %}
+		<li><a href="{{ link }}">#{{ link }}</a></li>
+	{% endfor %}
+{% endif %}
+
 </div>
 
 {% if page.related %}
     {% for related in page.related %}
 
-
 		{% assign foo_pages = site.pages | where:"permalink",related.slug %}
-
 
     	{% for page in foo_pages  %}
 			<div class="related">
