@@ -1,8 +1,8 @@
 ---
 layout: ord
 title: Digital Marknadsföring
-metadescription: Sed sed iaculis libero. Sed id rhoncus orci. Quisque fringilla, metus eu congue consequat, lectus ligula faucibus justo, nec cursus enim ex sed ligula.
-metatags: digitaltransformation
+metadescription: Digital marknadsföring handlar om att fånga potentiella kunders uppmärksamhet i digitala kanaler. 
+metatags: digitalmarknadsföring, digitalmarketing, marketing
 permalink: /digitalmarknadsforing/
 related:
  - slug: /contentmarketing/
@@ -11,7 +11,5 @@ related:
  - slug: /cms/
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim pulvinar diam. Integer aliquam, nibh nec auctor bibendum, magna lacus molestie lectus, et luctus nisl justo nec elit. Praesent fringilla dolor in congue auctor. Quisque eleifend ipsum a fringilla gravida. Maecenas nisi neque, ultrices porttitor auctor eget, fermentum eget urna. 
-
-Nulla id lectus vitae nunc vestibulum ornare vitae in magna. Integer sagittis pellentesque velit in scelerisque. Aenean nec lacinia justo, vel euismod purus. Nunc condimentum a erat vitae tristique. Nulla id suscipit tellus, ut interdum magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tristique tellus eget luctus maximus. Sed sed iaculis libero. Sed id rhoncus orci. Quisque fringilla, metus eu congue consequat, lectus ligula faucibus justo, nec cursus enim ex sed ligula.
+Digital marknadsföring är ett brett begrepp och innefattar de aktivieter som görs för att skapa intresse och kännedom kring ett företags erbjudande i digitala kanaler. 
 
