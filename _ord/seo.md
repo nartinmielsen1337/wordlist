@@ -7,6 +7,7 @@ permalink: /seo/
 related:
  - slug: /backlinks/
  - slug: /ranka/
+ - slug: /amp/
 
 ---
 
