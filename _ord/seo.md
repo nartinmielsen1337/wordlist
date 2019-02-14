@@ -5,6 +5,7 @@ metadescription: SEO är en förkortning av Search Engine Optimization, på sven
 metatags: seo, sökmotoroptimering, searchengineoptimization
 permalink: /seo/
 related:
+ - slug: /organisktsokresultat/
  - slug: /backlinks/
  - slug: /ranka/
  - slug: /amp/
