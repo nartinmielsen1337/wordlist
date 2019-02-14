@@ -6,6 +6,7 @@ metatags: programatic, programmatiskmarknadsföring, digitalmarknadsföring
 permalink: /programatic/
 related:
  - slug: /digitalmarknadsforing/
+ - slug: /tvillingmarknadsforing/ 
  - slug: /digitalisering/
 ---
 
