@@ -1,7 +1,7 @@
 ---
 layout: ord
 title: Mobile first
-metadescription: När någon säger ranka i kontexten digital marknadsföring syftas det ofta på hur högt en sida placerar sig i Googles organiska sökresultat.
+metadescription: obile first är ett begrepp som utgår från att mobilen är den viktigaste plattformen och det som en ska formge efter.
 metatags: mobilefirst, mobile, omnichannel, ux, ui, branding
 permalink: /mobilefirst/
 related:
