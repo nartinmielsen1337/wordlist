@@ -1,7 +1,7 @@
 ---
 layout: ord
 title: Mobile first
-metadescription: obile first är ett begrepp som utgår från att mobilen är den viktigaste plattformen och det som en ska formge efter.
+metadescription: Mobile first är ett begrepp som utgår från att mobilen är den viktigaste plattformen och det som en ska formge efter.
 metatags: mobilefirst, mobile, omnichannel, ux, ui, branding
 permalink: /mobilefirst/
 related:
