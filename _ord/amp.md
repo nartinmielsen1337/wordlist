@@ -2,7 +2,7 @@
 layout: ord
 title: AMP
 metadescription: AMP är en förkortning för Accelerated Mobile Pages och är en teknik som låter websidor ladda snabbare på mobilen.
-metatags: amp, seo
+metatags: amp, seo, google
 permalink: /amp/
 related:
  - slug: /seo/

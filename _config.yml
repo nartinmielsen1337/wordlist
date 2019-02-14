@@ -27,8 +27,10 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 theme: minima
+
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # Collections
 collections:
@@ -41,8 +43,9 @@ sass:
 
 # plugin for sitemap.xml
 url: "http://www.wordlist.se" # the base hostname & protocol for your site
-plugins:
-  - jekyll-sitemap
+
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
