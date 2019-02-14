@@ -8,15 +8,13 @@ layout: default
 <div vocab="http://schema.org/" typeof="TechArticle" resource="#article">
 	<h1 property="headline" class="u-text--large">{{ page.title }}</h1>
 
-	<div property="articleBody" class="bread">
-
 	{% assign metatags = page.metatags | split: ", " %}
 
 	{% for tag in metatags %}
 		<span><a href="/keywords/?keyword={{ tag }}">#{{ tag }}</a></span>
 	{% endfor %}
 
-
+	<div property="articleBody" class="bread">
 	{{ page.content }}
 	</div>
 
