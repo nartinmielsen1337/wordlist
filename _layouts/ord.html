@@ -15,7 +15,9 @@ layout: default
 	<span><a href="/keywords/?keyword={{ tag }}">#{{ tag }}</a></span>
 {% endfor %}
 
+<div vocab="http://schema.org/" typeof="ScholarlyArticle" resource="#article">
 {{ page.content }}
+</div>
 
 {% if page.externallinks %}
 	<h3>Extern läsning om {{ page.title }}</h3>
