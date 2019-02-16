@@ -2,9 +2,11 @@
 layout: ord
 title: Marknadsplatser
 metadescription: När man pratar marknadsplatser i kontexten e-handel syftar en på en tjänst där företag kan sälja sina produkter.digitaltransformation, industry4.0
-permalink: /digitalisering/
+permalink: /marknadsplatser/
 related:
+ - slug: /ehandel/
  - slug: /konvertering/
+ - slug: /lastmile/
 
 
 ---

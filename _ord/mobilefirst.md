@@ -7,6 +7,7 @@ permalink: /mobilefirst/
 related:
  - slug: /ux/
  - slug: /ui/
+ - slug: /ehandel/
 
 ---
 
