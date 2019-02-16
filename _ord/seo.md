@@ -6,7 +6,7 @@ metatags: seo, sökmotoroptimering, searchengineoptimization
 permalink: /seo/
 related:
  - slug: /organisktsokresultat/
- - slug: /backlinks/
+ - slug: /backlink/
  - slug: /ranka/
  - slug: /amp/
 

@@ -5,7 +5,8 @@ metadescription: Jolt Cola är en dryck som framför allt dricks av datorintress
 metatags: joltcola, cola, koffein
 permalink: /joltcola/
 related:
- - slug: /konvertering
+ - slug: /dreamhack/
+ - slug: /datornord/
 
 ---
 

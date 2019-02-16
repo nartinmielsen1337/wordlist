@@ -5,6 +5,8 @@ metadescription: Last mile är ett begrepp som används inom leverans. Där den 
 metatags: transport, ehandel, lastmile, leverans
 permalink: /lastmile/
 related:
+ - slug: /ehandel/
+ - slug: /marknadsplatser/
  - slug: /digitalisering/
 
 ---

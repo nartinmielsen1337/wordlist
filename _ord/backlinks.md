@@ -1,6 +1,6 @@
 ---
 layout: ord
-title: Backlinks
+title: Backlink
 metadescription: Backlink eller inbound link kallas de länkar som leder till din hemsida.
 metatags: backlink, inboundlink, incominglink, seo, offsiteseo, inkommandelänkar
 permalink: /backlink/

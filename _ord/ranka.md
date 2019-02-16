@@ -7,6 +7,7 @@ permalink: /ranka/
 related:
  - slug: /seo/
  - slug: /programatic/
+ - slug: /backlink/
 
 ---
 
