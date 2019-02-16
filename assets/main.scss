@@ -5,98 +5,232 @@ $general_font_size: 10px;
 $gutter: 10px;
 $vertical_spacing: $gutter*2;
 $primary_font_family: 'Fira Sans', sans-serif;
-
 $color--black: #000000;
 $color--white: #FFFFFF;
 
-html, body {
-    font-family: $primary_font_family;
-    margin:0;
-    padding: 0;
-    font-size: $general_font_size * 1.6;
+body,
+html {
+  font-family: $primary_font_family;
+  margin: 0;
+  padding: 0;
+  font-size: $general_font_size * 1.6;
+  padding-top: 20px;
+  scroll-behavior: smooth;
+  padding-bottom: 100px;
 }
 
 .u-text--large {
   font-size: $general_font_size * 7;
 }
 
-h1{
-    font-size: $general_font_size * 4.8;
-    word-break: break-all;
+h1 {
+  font-size: $general_font_size * 4.8;
+  word-break: break-all;
 }
-h2{
-    font-size: $general_font_size * 3.6;
+
+h2 {
+  font-size: $general_font_size * 3.6;
 }
-h3{
-    font-size: $general_font_size * 2.4;
+
+h3 {
+  font-size: $general_font_size * 2.4;
 }
-.bread p{
-    font-size: $general_font_size * 2;
+
+.bread p {
+  font-size: $general_font_size * 2;
 }
+
 p {
-    line-height: $general_font_size * 2.5;
+  line-height: $general_font_size * 2.5;
 }
 
 a {
   color: $color--black;
 }
-
-
-
-
-a.anchor{
-    margin-top: 36px;
-    display: block;
+.anchor {
+  position: sticky;
+  height: 40px;
+  line-height: 40px;
+  top: 41px;
+  background-color: white;
+  border-bottom: 1px solid black;
+  padding-left: 20px;
 }
+a.anchor {
+
+  display: block;
+}
+@media screen and (max-width: 375px) {}
+
+.register  {
+  width: 100%;
+  height: 40px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: white;
+}
+
 ul.register {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  li {
+    flex: 1 0 40px;
     text-align: center;
-    margin:36px 0 0 0;
+    line-height: 40px;
+    border: 1px solid black;
+    margin-left: -1px;
+    margin-top: -1px;
+    &:hover a {
+      background-color: black;
+      color: white;
+    }
+    a {
+      display: block;
+      height: 40px;
+      width: 100%;
+      color: black;
+      text-decoration: none;
+    }
+  }
 }
+
 hr {
-    border:0;
-    border-bottom: 1px solid $color--black;
+  border: 0;
+  border-bottom: 1px solid $color--black;
 }
 
 .breadcrumb {
-    margin:36px 0 0 0;
+  margin: 36px 0 0;
 }
 
 .wrapper {
-    max-width: 760px;
-    position: absolute;
-    padding: 0 20px
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-.related{
-    width: 370px;
-    margin-top: 72px;
-    float: left;
-    height:200px;
+.related {
+  width: 370px;
+  margin-top: 72px;
+  float: left;
+  height: 200px;
 }
+
 .related:nth-child(even) {
-    margin-left:20px;
+  margin-left: 20px;
 }
 
 @media screen and (max-width: 760px) {
-    .related{
-        width: auto;
-        height: auto;
-        float: none;
-    }
-    .related:nth-child(odd) {
-        margin-left:0;
-    }
+  .related {
+    width: auto;
+    height: auto;
+    float: none;
+  }
 
-    h1{
+  .related:nth-child(odd) {
+    margin-left: 0;
+  }
+
+  h1 {
     font-size: 32px;
     word-break: break-all;
-    }
-    h2{
-        font-size: 26px;
-    }
-    h3{
-        font-size: 22px;
-    }
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+}
+
+.root,
+html {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.article,
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.3571429rem;
+}
+
+.h1,
+h1 {
+  font-size: 6.8571429rem;
+  line-height: 8.1428571rem;
+  margin-top: 1.3571429rem;
+  margin-bottom: 2.7142858rem;
+}
+
+.h2,
+h2 {
+  font-size: 2.6428571rem;
+  line-height: 2.7142857rem;
+  margin-top: 1.3571429rem;
+  margin-bottom: 1.3571429rem;
+}
+
+.h3,
+h3 {
+  font-size: 1.6428571rem;
+  line-height: 2.7142857rem;
+  margin-top: 1.3571429rem;
+  margin-bottom: 0;
+}
+
+.h4,
+h4 {
+  font-size: 1rem;
+  line-height: 1.3571429rem;
+  margin-top: 1.3571429rem;
+  margin-bottom: 0;
+}
+
+.h5,
+h5 {
+  font-size: 1rem;
+  line-height: 1.3571429rem;
+  margin-top: 1.3571429rem;
+  margin-bottom: 0;
+}
+
+blockquote,
+ol,
+p,
+pre,
+table,
+ul {
+  margin-top: 0;
+  margin-bottom: 1.3571429rem;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Let's make sure all's aligned */
+.hr,
+hr {
+  border: 0.5px solid black;
+}
+
+.word-container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
 }
