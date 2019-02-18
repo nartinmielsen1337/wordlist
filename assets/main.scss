@@ -50,40 +50,35 @@ body {
 h1 {
   font-size: 4.8571429rem;
   line-height: 5.1428571rem;
-  margin-top: 1.3571429rem;
-  margin-bottom: 2.7142858rem;
+
 }
 
 .h2,
 h2 {
   font-size: 2.6428571rem;
   line-height: 2.7142857rem;
-  margin-top: 1.3571429rem;
-  margin-bottom: 1.3571429rem;
+
 }
 
 .h3,
 h3 {
   font-size: 1.6428571rem;
   line-height: 2.7142857rem;
-  margin-top: 1.3571429rem;
-  margin-bottom: 0;
+
 }
 
 .h4,
 h4 {
   font-size: 1rem;
   line-height: 1.3571429rem;
-  margin-top: 1.3571429rem;
-  margin-bottom: 0;
+
 }
 
 .h5,
 h5 {
   font-size: 1rem;
   line-height: 1.3571429rem;
-  margin-top: 1.3571429rem;
-  margin-bottom: 0;
+
 }
 
 blockquote,
@@ -117,18 +112,14 @@ a {
   position: sticky;
   height: 40px;
   line-height: 40px;
-  background-color: white;
   border-bottom: 1px solid black;
   padding-left: 20px;
+  margin-top: -40px;
 }
 a.anchor {
   display: block;
 }
-@media screen and (max-width: 375px) {
-  .anchor {
-    top: 96px;
-  }
-}
+
 
 .register  {
   z-index: 3;
@@ -202,7 +193,21 @@ hr {
 .word-container {
   max-width: 768px;
   margin: 0 auto;
-  padding: 0 10px 0 10px;
+  padding: 30px 30px 30px 30px;
+  border: 1px solid black;
+  margin-top: -1px;
+  h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+}
+
+.read-more a {
+    display: block;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: red;
 }
 
 .bread {

@@ -12,8 +12,6 @@ layout: default
 
 		{% assign metatags = page.metatags | split: ", " %}
 
-
-
 		<div property="articleBody" class="bread">
 		{{ page.content }}
 		</div>
@@ -29,7 +27,9 @@ layout: default
 		{% endif %}
 	</div>
 
+
 <div class="related-tags">
+
 		{% for tag in metatags %}
 
 				<ul>
@@ -39,7 +39,9 @@ layout: default
 				</ul>
 
 		{% endfor %}
+
 </div>
+
 
 <div class="related">
 	{% if page.related %}
