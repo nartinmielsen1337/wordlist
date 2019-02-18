@@ -5,41 +5,57 @@ layout: default
 	<a href="/">Start</a> / <span>{{ page.title }}</span>
 </nav>
 
-<div vocab="http://schema.org/" typeof="TechArticle" resource="#article">
-	<h1 property="headline" class="u-text--large">{{ page.title }}</h1>
+<div class="content-detail">
 
-	{% assign metatags = page.metatags | split: ", " %}
+	<div vocab="http://schema.org/" typeof="TechArticle" resource="#article">
+		<h1 property="headline">{{ page.title }}</h1>
 
-	{% for tag in metatags %}
-		<span><a href="/keywords/?keyword={{ tag }}">#{{ tag }}</a></span>
-	{% endfor %}
+		{% assign metatags = page.metatags | split: ", " %}
 
-	<div property="articleBody" class="bread">
-	{{ page.content }}
+
+
+		<div property="articleBody" class="bread">
+		{{ page.content }}
+		</div>
+
+	<div class="external-reading">
+		{% if page.externallinks %}
+			<h3>Extern läsning om {{ page.title }}</h3>
+			<ul>
+			{% for link in page.externallinks %}
+		    	<li><a href="{{ link.link }}">{{ link.link }}</a></li>
+		   	{% endfor %}
+		   	</ul>
+		{% endif %}
 	</div>
 
-	{% if page.externallinks %}
-		<h3>Extern läsning om {{ page.title }}</h3>
-		<ul>
-		{% for link in page.externallinks %}
-	    	<li><a href="{{ link.link }}">{{ link.link }}</a></li>
-	   	{% endfor %}
-	   	</ul>
-	{% endif %} 	
+<div class="related-tags">
+		{% for tag in metatags %}
+
+				<ul>
+					<li>
+						<a href="/keywords/?keyword={{ tag }}">#{{ tag }}</a>
+					</li>
+				</ul>
+
+		{% endfor %}
 </div>
 
+<div class="related">
+	{% if page.related %}
+	    {% for related in page.related %}
+	    	{% for ord in site.ord %}
+	    		{% if related.slug contains ord.permalink  %}
 
-{% if page.related %}
-    {% for related in page.related %}
-    	{% for ord in site.ord %}
-    		{% if related.slug contains ord.permalink  %}
-				<div class="related">
-					<H2>{{ ord.title }}</H2>
-					<hr />
-					<p>{{ ord.metadescription }}</p>
-					<a href="{{ ord.permalink  }}">{{ ord.title }}</a>
-				</div>
-			{% endif %}
-    	{% endfor %}
-    {% endfor %}
-{% endif %}
+						<H2>{{ ord.title }}</H2>
+						<hr />
+						<p>{{ ord.metadescription }}</p>
+						<a href="{{ ord.permalink  }}">{{ ord.title }}</a>
+
+				{% endif %}
+	    	{% endfor %}
+	    {% endfor %}
+	{% endif %}
+</div>
+
+</div>
