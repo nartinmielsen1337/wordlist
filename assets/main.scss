@@ -21,95 +21,83 @@ $primary_font_family: sans-serif;
 $color--black: #000000;
 $color--white: #FFFFFF;
 
+:root {
+  background-color: #e9e9e9;
+}
+
 body,
 html {
   font-family: $primary_font_family;
   margin: 0;
   padding: 0;
   font-size: $general_font_size * 1.6;
-  padding-top: 20px;
   scroll-behavior: smooth;
-  padding-bottom: 100px;
   max-width: 100% !important;
   overflow-x:hidden !important;
   box-sizing: border-box !important;
   text-overflow: ellipsis;
   overflow-wrap: break-word;
-position: relative;
+  position: relative;
 }
 
-
-.article,
-body {
+.article, body {
   font-family: sans-serif;
   font-size: 1rem;
   line-height: 1.3571429rem;
 }
 
-.h1,
-h1 {
-  font-size: 4.8571429rem;
-  line-height: 5.1428571rem;
+.h1, h1 {
+  font-size: 3.8571429rem;
+  line-height: 4.1428571rem;
 
 }
 
-.h2,
-h2 {
-  font-size: 2.6428571rem;
-  line-height: 2.7142857rem;
+.h2, h2 {
+  font-size: 1.6428571rem;
+  line-height: 1.7142857rem;
 
 }
 
-.h3,
-h3 {
+.h3, h3 {
   font-size: 1.6428571rem;
   line-height: 2.7142857rem;
 
 }
 
-.h4,
-h4 {
+.h4, h4 {
   font-size: 1rem;
   line-height: 1.3571429rem;
 
 }
 
-.h5,
-h5 {
+.h5, h5 {
   font-size: 1rem;
   line-height: 1.3571429rem;
 
 }
 
-blockquote,
-ol,
-p,
-pre,
-table,
-ul {
+blockquote, ol, p, pre, table, ul {
   margin-top: 0;
   margin-bottom: 1.3571429rem;
 }
 
-ol ol,
-ol ul,
-ul ol,
-ul ul {
+ol ol, ol ul, ul ol, ul ul {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* Let's make sure all's aligned */
-.hr,
-hr {
+
+.hr, hr {
   border: 0.5px solid black;
 }
 
 a {
-  color: black;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .anchor {
-  position: sticky;
   height: 40px;
   line-height: 40px;
   border-bottom: 1px solid black;
@@ -176,6 +164,7 @@ hr {
   line-height: 40px;
   width: 100%;
   border-bottom: 1px solid $color--black;
+  background-color: $color--white;
 }
 
 .wrapper {
@@ -184,10 +173,23 @@ hr {
 }
 
 .related {
-  flex: 1 1 355px;
-  margin-top: 72px;
-  height: 200px;
-  padding: $gutter;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: $gutter*1;
+}
+
+.related_item {
+  padding: $gutter*2;
+  margin-left: -1px;
+  margin-top: -1px;
+  border: 1px solid black;
+  flex: 1 0 355px;
 }
 
 .word-container {
@@ -196,6 +198,7 @@ hr {
   padding: 30px 30px 30px 30px;
   border: 1px solid black;
   margin-top: -1px;
+  background-color: $color--white;
   h2 {
     font-weight: bold;
     margin-bottom: 20px;
@@ -219,16 +222,29 @@ hr {
   flex-flow: row wrap;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: $gutter;
-  max-width: 100vw !important;
+  max-width: 50vw;
+  padding: $gutter 0 $gutter 0;
   p {
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 1.25em;
   }
-  h2,h1, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     max-width: 90vw;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .bread {
+    max-width: 100vw;
+  }
+}
+
 .related-tags {
   display: flex;
   display: -webkit-box;
@@ -238,7 +254,6 @@ hr {
   flex-flow: row wrap;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: $gutter;
   ul {
     margin-bottom: -1px;
     li {
@@ -264,7 +279,22 @@ hr {
 footer {
   width: 100%;
   border-top: 1px solid black;
-  position: absolute;
-  bottom: 0;
+  margin-top: -1px;
   padding: $gutter*2;
+  background-color: $color--white;
+}
+
+.content-detail {
+  padding: $gutter*3;
+  background-color: $color--white;
+  min-height: 100vh;
+  height: auto;
+}
+
+.cont {
+    padding-top: 40px;
+}
+
+.headline{
+  margin-bottom: $gutter !important;
 }

@@ -1,63 +1,65 @@
 ---
 layout: default
 ---
+
 <nav class="breadcrumb">
 	<a href="/">Start</a> / <span>{{ page.title }}</span>
 </nav>
 
-<div class="content-detail">
+<div class="content-detail word-container">
 
 	<div vocab="http://schema.org/" typeof="TechArticle" resource="#article">
+
 		<h1 property="headline">{{ page.title }}</h1>
 
 		{% assign metatags = page.metatags | split: ", " %}
 
 		<div property="articleBody" class="bread">
-		{{ page.content }}
+			{{ page.content }}
 		</div>
 
-	<div class="external-reading">
-		{% if page.externallinks %}
+		<div class="external-reading">
+			{% if page.externallinks %}
 			<h3>Extern läsning om {{ page.title }}</h3>
 			<ul>
-			{% for link in page.externallinks %}
-		    	<li><a href="{{ link.link }}">{{ link.link }}</a></li>
-		   	{% endfor %}
-		   	</ul>
-		{% endif %}
+				{% for link in page.externallinks %}
+				<li><a href="{{ link.link }}">{{ link.link }}</a></li>
+				{% endfor %}
+			</ul>
+			{% endif %}
+		</div>
+
+		<div class="related-tags">
+
+			{% for tag in metatags %}
+
+			<ul>
+				<li>
+					<a href="/keywords/?keyword={{ tag }}">#{{ tag }}</a>
+				</li>
+			</ul>
+
+			{% endfor %}
+
+		</div>
+
+
+		<div class="related">
+
+			{% if page.related %}
+				{% for related in page.related %}
+					{% for ord in site.ord %}
+						{% if related.slug contains ord.permalink %}
+								<div class="related_item">
+									<a href="{{ ord.permalink  }}"><h2>{{ ord.title }}</h2></a>
+									
+									<p>{{ ord.metadescription }}</p>
+									<a href="{{ ord.permalink  }}">{{ ord.title }}</a>
+								</div>
+						{% endif %}
+					{% endfor %}
+				{% endfor %}
+			{% endif %}
+		</div>
+
 	</div>
-
-
-<div class="related-tags">
-
-		{% for tag in metatags %}
-
-				<ul>
-					<li>
-						<a href="/keywords/?keyword={{ tag }}">#{{ tag }}</a>
-					</li>
-				</ul>
-
-		{% endfor %}
-
-</div>
-
-
-<div class="related">
-	{% if page.related %}
-	    {% for related in page.related %}
-	    	{% for ord in site.ord %}
-	    		{% if related.slug contains ord.permalink  %}
-
-						<H2>{{ ord.title }}</H2>
-						<hr />
-						<p>{{ ord.metadescription }}</p>
-						<a href="{{ ord.permalink  }}">{{ ord.title }}</a>
-
-				{% endif %}
-	    	{% endfor %}
-	    {% endfor %}
-	{% endif %}
-</div>
-
-</div>
