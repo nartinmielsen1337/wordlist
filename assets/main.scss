@@ -47,32 +47,19 @@ html {
 }
 
 .h1, h1 {
-  font-size: 3.8571429rem;
-  line-height: 4.1428571rem;
-
+  font-size: 36px;
+  line-height: 42px;
 }
 
 .h2, h2 {
-  font-size: 1.6428571rem;
-  line-height: 1.7142857rem;
+  font-size: 24px;
+  line-height: 30px;
 
 }
 
 .h3, h3 {
-  font-size: 1.6428571rem;
-  line-height: 2.7142857rem;
-
-}
-
-.h4, h4 {
-  font-size: 1rem;
-  line-height: 1.3571429rem;
-
-}
-
-.h5, h5 {
-  font-size: 1rem;
-  line-height: 1.3571429rem;
+  font-size: 20px;
+  line-height: 24px;
 
 }
 
@@ -103,6 +90,11 @@ a {
   border-bottom: 1px solid black;
   padding-left: 20px;
   margin-top: -40px;
+}
+@media only screen and (max-width: 480px) {
+  .anchor {
+    visibility: hidden;
+  }
 }
 a.anchor {
   display: block;
@@ -282,6 +274,8 @@ footer {
   margin-top: -1px;
   padding: $gutter*2;
   background-color: $color--white;
+  min-height: 200px;
+  height: auto;
 }
 
 .content-detail {
@@ -291,8 +285,19 @@ footer {
   height: auto;
 }
 
+@media only screen and (max-width: 480px) {
+  .content-detail {
+    padding: $gutter;
+  }}
+
 .cont {
     padding-top: 40px;
+}
+
+@media only screen and (max-width: 480px) {
+  .cont{
+padding-top: 80px;
+}
 }
 
 .headline{
