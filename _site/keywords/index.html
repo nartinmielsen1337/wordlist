@@ -140,6 +140,9 @@
 	    '{ "title":"Mobile first","tags": "mobilefirst, mobile, omnichannel, ux, ui, branding","url":"/mobilefirst/" }'
 	    ,
 	  
+	    '{ "title":"Omni Channel","tags": "omnichannel, omnikanal, omni","url":"/omnichannel/" }'
+	    ,
+	  
 	    '{ "title":"Organiskt sökresultat","tags": "google, organisktsökreslutat, organiskt, organic","url":"/organisktsokresultat/" }'
 	    ,
 	  
@@ -173,12 +176,15 @@
 
       	KeyWordifylist(posts);
       	$("#title").html("#"+myParam);
+      	$("#bread").html("#"+myParam);
+
+      	$(document).prop("title","#"+myParam);
     });
 	
 </script>
 
 <nav class="breadcrumb">
-	<a href="/">Hem</a> / <span>Ordlista 19 - Keywords</span>
+	<a href="/">Hem</a> / <span id="bread"></span>
 </nav>
 <h1 id="title"></h1>
 <div id="keywordlist"></div>

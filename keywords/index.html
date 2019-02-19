@@ -18,12 +18,15 @@ title: Ordlista 19 - Keywords
 
       	KeyWordifylist(posts);
       	$("#title").html("#"+myParam);
+      	$("#bread").html("#"+myParam);
+
+      	$(document).prop("title","#"+myParam);
     });
 	
 </script>
 
 <nav class="breadcrumb">
-	<a href="/">Hem</a> / <span>{{ page.title }}</span>
+	<a href="/">Hem</a> / <span id="bread"></span>
 </nav>
 <h1 id="title"></h1>
 <div id="keywordlist"></div>
