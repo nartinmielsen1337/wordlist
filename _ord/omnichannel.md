@@ -5,6 +5,7 @@ metadescription: Omni Channel är benämningen på en  strategi som syftar till 
 metatags: omnichannel, omnikanal, omni
 permalink: /omnichannel/
 related:
+ - slug: /multichannel/
  - slug: /ehandel/
  - slug: /digitalmarknadsforing/
  - slug: /mobilefirst/
