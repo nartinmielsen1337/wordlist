@@ -23,7 +23,7 @@
     <script type="text/javascript">
             $(function() {
                 $(document).on('keypress',function(e) {
-                    console.log(e.which);
+                    location.hash = "#" + String.fromCharCode(e.which);
                 });
             });
 

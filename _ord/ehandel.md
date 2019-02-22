@@ -8,6 +8,7 @@ related:
  - slug: /konvertering/
  - slug: /marknadsplatser/
  - slug: /digitalisering/
+ - slug: /lastmile/
 
 ---
 
