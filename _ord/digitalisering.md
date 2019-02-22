@@ -5,6 +5,8 @@ metadescription: Digitalisering innebär att något som tidigare inte varit digi
 metatags: digitalisering, transformation, digitaltransformation, industry4.0
 permalink: /digitalisering/
 related:
+ - slug: /ehandel/
+ - slug: /clickstobricks/
  - slug: /programatic/
  - slug: /tvillingmarknadsforing/
 
